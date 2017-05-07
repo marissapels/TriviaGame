@@ -1,0 +1,18 @@
+Show start button on load
+	On click hide
+	Display first question
+		assign class for correct and incorrect answers
+Set Interval to count down timer
+Three possibilities for each question
+	Correct Answer
+		Tell user they are correct
+		Show image
+	Incorrect Answer
+		Tell user they are incorrect
+		Show image
+	Run out of time
+		Tell user time is up
+Replace each question with with new question
+	handle with jquery
+Replace each answer with new answer
+	handle with jquery

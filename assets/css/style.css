@@ -1,13 +1,9 @@
+#status{
+	margin:20px;
+}
+
 .questionBox{
-	position:relative;
-	margin:30px;
-}
-
-.question1, .question2, .question3 {
-	position:absolute;
-}
-
-.question1, .question2, .question3 {
-	visibility: hidden;
+	margin:20px;
+	visibility:hidden;
 }
 

@@ -16,3 +16,8 @@ Replace each question with with new question
 	handle with jquery
 Replace each answer with new answer
 	handle with jquery
+
+
+save each question as a variable
+put all variables into an array
+index through array after each question

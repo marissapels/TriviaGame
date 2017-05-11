@@ -3,28 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Disney Trivia</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans|Francois+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<h1>Disney Trivia!!</h1>
+	<header>
+		<h1><img src="assets/images/disneyLogo.png" alt="Disney Logo" class="disney"><span>Trivia Challenge</span></h1>
+	
+	</header>
 
+	<div class="container">
+		<button id="startButton">Start</button>
 
-	<button id="startButton">Start</button>
+		<div id="status"></div>
 
-	<div id="status"></div>
-
-	<div class="questionBox">
-		<div id="question1">
-			<p id="question"></p>
-			<p class="answer" id="answerChoice0"></p>
-			<p class="answer" id="answerChoice1"></p>
-			<p class="answer" id="answerChoice2"></p>
-			<p class="answer" id="answerChoice3"></p>
+		<div class="questionBox">
+			<div id="question1">
+				<p id="question"></p>
+				<p class="answer" id="answerChoice0"></p>
+				<p class="answer" id="answerChoice1"></p>
+				<p class="answer" id="answerChoice2"></p>
+				<p class="answer" id="answerChoice3"></p>
+			</div>
 		</div>
-	</div>
 
-	<div class="timer"> 
-		<p>Time:&nbsp; <span id="time"></span></p>
+		<div class="timer"> 
+			<p>Time:&nbsp; <span id="time"></span></p>
+		</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>

@@ -43,35 +43,35 @@ $(document).ready(function(){
 
 		if (clickedButton==="Nala"){
 			correct();
-			$("#question").html("<img src='assets/images/lionKing.gif'>");
+			$("#question").html("<img class='giph' src='assets/images/lionKing.gif'>");
 		}
 		if (clickedButton==="Timon"||clickedButton==="Pumbaa"||clickedButton==="Zazu"){
 			incorrect();
-			$("#question").html("<img src='assets/images/lionKing.gif'>");	
+			$("#question").html("<img class='giph' src='assets/images/lionKing.gif'>");	
 		}
 		if (clickedButton==="Ursula"){
 			correct();
-			$("#question").html("<img src='assets/images/ursula.gif'>");
+			$("#question").html("<img class='giph' src='assets/images/ursula.gif'>");
 		}
 		if (clickedButton==="Cruella de Vil"||clickedButton==="Scar"||clickedButton==="The Stepmother"){
 			incorrect();
-			$("#question").html("<img src='assets/images/ursula.gif'>");
+			$("#question").html("<img class='giph' src='assets/images/ursula.gif'>");
 		}
 		if (clickedButton==="Part of your World"){
 			correct();
-			$("#question").html("<img src='assets/images/belle.gif'>");
+			$("#question").html("<img class='giph' src='assets/images/belle.gif'>");
 		}
 		if (clickedButton==="Be Our Guest"||clickedButton==="Gaston"||clickedButton==="Belle"){
 			incorrect();
-			$("#question").html("<img src='assets/images/belle.gif'>");
+			$("#question").html("<img class='giph' src='assets/images/belle.gif'>");
 		}
 		if (clickedButton==="Lovely thoughts and fairy dust"){
 			correct();
-			$("#question").html("<img src='assets/images/peterPan.gif'>");	
+			$("#question").html("<img class='giph' src='assets/images/peterPan.gif'>");	
 		}
 		if (clickedButton==="magic"||clickedButton==="wings and fairy dust"||clickedButton==="carpet"){
 			incorrect();
-			$("#question").html("<img src='assets/images/peterPan.gif'>");
+			$("#question").html("<img class='giph' src='assets/images/peterPan.gif'>");
 		}
 		//for last question, execute display end function after answer is selected
 		if (clickedButton==="Silly"){
@@ -80,7 +80,7 @@ $(document).ready(function(){
 			$("#status").html("Correct!!!");
 			countCorrect++;
 			number++;
-			$("#question").html("<img src='assets/images/dwarfs.gif'>");
+			$("#question").html("<img class='giph' src='assets/images/dwarfs.gif'>");
 			setTimeout(function(){displayEnd();},3000);
 		}
 		if (clickedButton==="Sleepy"||clickedButton==="Grumpy"||clickedButton==="Doc"){
@@ -89,7 +89,7 @@ $(document).ready(function(){
 			$("#status").html("That's not right...");
 			countIncorrect++;
 			number++;
-			$("#question").html("<img src='assets/images/dwarfs.gif'>");
+			$("#question").html("<img class='giph' src='assets/images/dwarfs.gif'>");
 			setTimeout(function(){displayEnd();},3000);
 		}
 	});
@@ -136,12 +136,12 @@ $(document).ready(function(){
 	function displayEnd(){
 		$(".timer").css("visibility","hidden");
 		$("#status").html("");
-		$(".answer").css("visibility","visible");
+		$(".answer").css("visibility","hidden");
 		$("#startButton").css("visibility","visible");
 		$("#question").html("");
-		$("#answerChoice0").html("Correct Guesses: " + countCorrect);
-		$("#answerChoice1").html("Incorrect Guesses: " + countIncorrect);
-		$("#answerChoice2").html("Ran out of Time: " + countNoGuess);
+		$("#question").append("<div class='stat'> Correct Guesses: " + countCorrect + "</div>");
+		$("#question").append("<div class='stat'> Incorrect Guesses: " + countIncorrect +"</div>");
+		$("#question").append("<div class='stat'> Ran out of Time: " + countNoGuess + "</div>");
 		$("#answerChoice3").html("");
 	}
 
@@ -158,8 +158,9 @@ $(document).ready(function(){
 
 	//timer functions
 	function timerRun(){
-		$(".timer").css("visibility","visible");
 		time=20;
+		$(".timer").css("visibility","visible");
+		$("#time").html(time);
 		intervalId = setInterval(countdown,1000)
 
 		$(".answer").on("click",function(){

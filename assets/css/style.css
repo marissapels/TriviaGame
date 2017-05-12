@@ -8,11 +8,16 @@ header{
 	margin: 10px auto;
 }
 
-img {
+.giph {
 	border-radius:20px;
-	height:250px;
+	max-height:70%;
 	max-width:98%;
 	margin-bottom:none;
+	position:absolute;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
 }
 .disney {
 	height:100px;
@@ -38,6 +43,7 @@ h1 {
 	text-align:center;
 	font-family: 'PT Sans', sans-serif;
 	font-size:20px;
+	position:relative;
 }
 
 #startButton{
@@ -46,6 +52,9 @@ h1 {
 	width:100px;
 	font-family: 'Francois One', sans-serif;
 	font-size:20px;
+}
+#startButton:hover{
+	cursor:pointer;
 }
 .answer{
 	padding:5px;
@@ -60,6 +69,10 @@ h1 {
 #status{
 	font-size:22px;
 	font-weight:bold;
+}
+
+.stat {
+	margin:10px;
 }
 
 .questionBox{

@@ -11,6 +11,7 @@ header{
 img {
 	border-radius:20px;
 	height:250px;
+	margin-bottom:none;
 }
 .disney {
 	height:100px;
@@ -52,6 +53,7 @@ h1 {
 }
 .answer:hover{
 	background:#e3cdf4;
+	cursor:pointer;
 }
 
 #status{

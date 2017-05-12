@@ -11,6 +11,7 @@ header{
 img {
 	border-radius:20px;
 	height:250px;
+	max-width:98%;
 	margin-bottom:none;
 }
 .disney {
@@ -32,7 +33,7 @@ h1 {
 	width:55%;
 	background-color: rgba(232, 235, 239, 0.6);
 	margin:0 0 0 20px;
-	height:400px;
+	height:450px;
 	border-radius:20px;
 	text-align:center;
 	font-family: 'PT Sans', sans-serif;

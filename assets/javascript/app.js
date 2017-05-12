@@ -76,6 +76,7 @@ $(document).ready(function(){
 		//for last question, execute display end function after answer is selected
 		if (clickedButton==="Silly"){
 			$(".answer").css("visibility","hidden");
+			$(".timer").css("visibility","hidden");
 			$("#status").html("Correct!!!");
 			countCorrect++;
 			number++;
@@ -84,6 +85,7 @@ $(document).ready(function(){
 		}
 		if (clickedButton==="Sleepy"||clickedButton==="Grumpy"||clickedButton==="Doc"){
 			$(".answer").css("visibility","hidden");
+			$(".timer").css("visibility","hidden");
 			$("#status").html("That's not right...");
 			countIncorrect++;
 			number++;
